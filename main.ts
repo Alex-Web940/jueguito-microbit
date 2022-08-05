@@ -1,6 +1,6 @@
 input.onButtonPressed(Button.A, function () {
     Cabeza_dinosaurio.change(LedSpriteProperty.Y, -1)
-    Pies_dinosaurio.change(LedSpriteProperty.Y, -1)
+    Pies_dinosaurio.change(LedSpriteProperty.Y, -2)
     basic.pause(900)
     Cabeza_dinosaurio.change(LedSpriteProperty.Y, 1)
     Pies_dinosaurio.change(LedSpriteProperty.Y, 2)
