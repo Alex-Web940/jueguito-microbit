@@ -1,9 +1,9 @@
 input.onButtonPressed(Button.A, function () {
-    Cabeza_dinosaurio.change(LedSpriteProperty.Y, -1)
+    Cabeza_dinosaurio.change(LedSpriteProperty.Y, -2)
     Pies_dinosaurio.change(LedSpriteProperty.Y, -1)
     basic.pause(900)
-    Cabeza_dinosaurio.change(LedSpriteProperty.Y, 1)
-    Pies_dinosaurio.change(LedSpriteProperty.Y, 2)
+    Cabeza_dinosaurio.change(LedSpriteProperty.Y, 3)
+    Pies_dinosaurio.change(LedSpriteProperty.Y, 1)
 })
 function Piedrita () {
     Piedra = game.createSprite(4, 4)
