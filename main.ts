@@ -1,6 +1,6 @@
 input.onButtonPressed(Button.A, function () {
     Cabeza_dinosaurio.change(LedSpriteProperty.Y, -1)
-    Pies_dinosaurio.change(LedSpriteProperty.Y, -2)
+    Pies_dinosaurio.change(LedSpriteProperty.Y, -1)
     basic.pause(900)
     Cabeza_dinosaurio.change(LedSpriteProperty.Y, 1)
     Pies_dinosaurio.change(LedSpriteProperty.Y, 2)
@@ -10,7 +10,7 @@ function Piedrita () {
     for (let index = 0; index < 4; index++) {
         basic.pause(500)
         Piedra.change(LedSpriteProperty.X, -1)
-        if (Piedra.isTouching(Cabeza_dinosaurio)) {
+        if (Piedra.isTouching(Pies_dinosaurio)) {
             music.startMelody(music.builtInMelody(Melodies.JumpUp), MelodyOptions.Once)
             basic.showIcon(IconNames.Angry)
             Piedrita()
